@@ -58,11 +58,11 @@ contador_colores=1
 #Autor:		  	Juan Pedro Alarcón Gómez
 #Organización:	Universidad de Burgos
 function array_colores {
-	arr_colores[$contador]="\e[3${contador_colores}m"
-	contador_colores=$(($contador_colores+1))
-	if [[ $contador_colores -eq 7 ]]; then
-		contador_colores=1
-	fi
+    arr_colores[$contador]="\e[3${contador_colores}m"
+    contador_colores=$(($contador_colores+1))
+    if [[ $contador_colores -eq 7 ]]; then
+	contador_colores=1
+    fi
 }
 
 
